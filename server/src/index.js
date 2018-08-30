@@ -6,7 +6,6 @@ const AuthPayload = require("./resolvers/AuthPayload");
 const Subscription = require("./resolvers/Subscription");
 const Feed = require("./resolvers/Feed");
 
-// 2
 const resolvers = {
   Query,
   Mutation,
@@ -15,7 +14,6 @@ const resolvers = {
   Feed
 };
 
-// 3
 const server = new GraphQLServer({
   typeDefs: "./src/schema.graphql",
   resolvers,
